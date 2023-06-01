@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+:root{
+    --main-radious:5px;
+    --main-padding:5px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.2fr 1.5fr 0.8fr;
+    grid-template-areas: 
+
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar container1 container2 container3"
+    "sidebar footer footer footer"
+    ;
+    font-family:  sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: azure;
+    text-align: center;
+
+}
+nav{
+    background-color: aqua;
+    grid-area: nav;
+    border-radius: var(--main-radious);
+    padding-top: var(--main-padding);
+}
+main{
+    background-color: orange;
+    grid-area: main;
+    border-radius: var(--main-radious);
+    padding-top: var(--main-padding);
+    
+}
+.sidebar{
+    background-color: rgb(217, 65, 161);
+    grid-area: sidebar;
+    border-radius: var(--main-radious);
+    padding-top: var(--main-padding);
+}
+#container1{
+    background-color: rgb(216, 95, 30);
+    grid-area: container1;
+    border-radius: var(--main-radious);
+    padding-top: var(--main-padding);
+}
+#container2{
+    background-color: rgb(24, 239, 27);
+    grid-area: container2;
+    border-radius: var(--main-radious);
+    padding-top: var(--main-padding);
+
+}
+#container3{
+    background-color: rgb(245, 25, 139);
+    grid-area: container3;
+    border-radius: var(--main-radious);
+    padding-top: var(--main-padding);
+}
+footer{
+    background-color: rgb(225, 245, 4);
+    grid-area: footer;
+    border-radius: var(--main-radious);
+    padding-top: var(--main-padding);
+}
+
+@media only screen and (max-width:550px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.8fr 2.5fr 1.2fr 1.2fr 1.2fr 0.6fr;
+        grid-template-areas: 
+        "nav"
+        "sidebar"
+        "main"
+        "container1"
+        "container2"
+        "container3"
+        "footer"
+        
+        ;
+    }
+}

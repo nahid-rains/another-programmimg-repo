@@ -1,0 +1,40 @@
+/* body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+nav{
+    height: 300px;
+    width: 100%;
+    background-image:linear-gradient(black,orangered,orange);
+    
+    
+    
+  
+}
+nav ul li{
+    color: white;
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px; 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+nav ul li:hover{
+    color: chartreuse;
+    border-bottom: 2px solid gold;
+    transition: 1.2s;
+}
+table{
+    border-collapse: collapse;
+    margin-top: 200px;
+    
+
+}
+
+td,th{
+    border: 2px solid rebeccapurple;
+    padding: 0 10px;
+    color: blueviolet;
+}
