@@ -28,20 +28,20 @@
 
 }
 nav{
-    background-color: blueviolet;
+    background-color: rgb(133, 5, 253);
     grid-area: nav;
     border-radius: var(--max-radious);
     padding-top: var(--max-padding);
 }
 main{
-    background-color: aqua;
+    background-color: rgb(13, 226, 202);
     grid-area: main;
     border-radius: var(--max-radious);
     padding-top: var(--max-padding);
 
 }
 .sidebar{
-    background-color: rgb(231, 130, 130);
+    background-color: rgb(235, 107, 107);
     grid-area: sidebar;
     border-radius: var(--max-radious);
     padding-top: var(--max-padding);
